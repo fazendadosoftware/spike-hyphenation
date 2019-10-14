@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="h-screen w-screen flex bg-gray-200">
-      <div class="w-1/2 text-gray-700 text-center bg-gray-400 p-2 m-2 flex flex-col items-center justify-center">
+      <div class="flex-1 text-gray-700 text-center bg-gray-400 p-2 m-2 flex flex-col items-center justify-center">
         <div class="flex flex-col rounded p-2 m-2 bg-white shadow items-center">
           <template v-if="text">
             <flag v-if="language.icon" :iso="language.icon" :squared="false" class="text-5xl shadow"/>
@@ -11,7 +11,7 @@
         </div>
         <textarea v-model="text" class="w-full h-full border rounded focus:outline-none p-2"/>
       </div>
-      <div class="w-1/2 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 flex flex-col items-center justify-center">
+      <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 flex flex-col items-center justify-center">
         <div class="w-1/2 hyphenate resize overflow-auto m-2 p-2 bg-white shadow">
           <div class="flex border-b mb-2 justify-between items-center">
             <span class="font-bold text-md mx-4">Browser's native hyphenation (auto)</span>
@@ -21,7 +21,6 @@
         <div class="mt-4 w-1/2 resize overflow-auto bg-white rounded shadow p-2">
           <div class="flex border-b mb-2 justify-between items-center cursor-pointer">
             <span class="font-bold text-md mx-4">JS library: <span class="underline">hyphen</span></span>
-            <img class="m-3" width="30" src="./assets/img/github.svg"/>
           </div>
           <div class="hyphenate mt-2 hyphens-manual bg-green-700 text-white shadow">
             {{hyphenTranslated}}
@@ -55,7 +54,6 @@ export default {
     },
     hyphenTranslated () {
       const hyphenator = this.$hyphenate[this.detectedLanguage]
-      console.log('hyphenator', hyphenator)
       return hyphenator ? hyphenator(this.text) : this.text
     }
   },
