@@ -13,6 +13,7 @@
     "franc": "^4.1.0",
     "hyphen": "^1.1.1",
     "vue": "^2.6.10",
+    "vue-flag-icon": "^1.0.6",
     "vue-resize": "^0.4.5"
   },
   "devDependencies": {
