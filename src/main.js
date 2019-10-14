@@ -15,8 +15,10 @@ import itPattern from 'hyphen/patterns/it'
 /* global lx */
 Vue.prototype.$lx = lx
 
+// language detector
 Vue.prototype.$franc = franc
 
+// hyphen module
 Vue.prototype.$hyphenate = {
   deu: hyphen(dePattern),
   eng: hyphen(enUSPattern),
