@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "franc": "^4.1.0",
+    "hyphen": "^1.1.1",
+    "hyphenopoly": "^3.2.1",
+    "vue": "^2.6.10",
+    "vue-flag-icon": "^1.0.6",
+    "vue-resize": "^0.4.5"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-eslint": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
@@ -20,8 +26,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "purgecss": "^1.4.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "tailwindcss": "^1.1.2",
     "vue-cli-plugin-leanix": "^0.2.1",
     "vue-template-compiler": "^2.6.10"
   },
